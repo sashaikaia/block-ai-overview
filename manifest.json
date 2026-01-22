@@ -3,8 +3,14 @@
   "name": "Block AI Overview",
   "version": "1.0",
   "description": "Removes AI Overview from Google searches by adding -ai to queries",
-  "permissions": ["webNavigation"],
+  "permissions": ["webNavigation", "storage"],
   "host_permissions": ["*://*.google.com/*"],
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": {
+      "128": "nobot_icon_128.png"
+    }
+  },
   "content_scripts": [
     {
       "matches": ["*://*.google.com/search*"],
