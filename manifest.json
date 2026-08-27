@@ -1,7 +1,7 @@
 {
   "manifest_version": 3,
   "name": "Block AI Overview",
-  "version": "2.1.0",
+  "version": "2.1.1",
   "description": "Removes AI Overview from Google searches by adding -ai to queries",
   "permissions": ["storage"],
   "host_permissions": [

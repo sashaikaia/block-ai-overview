@@ -12,8 +12,8 @@ function modifySearch() {
     const urlParams = new URLSearchParams(window.location.search);
     const query = urlParams.get('q');
     
-    // Check if query exists and doesn't already have -ai
-    if (query && !query.includes('-ai')) {
+    // Check if query exists and doesn't already have -ai or ai
+    if (query && !query.includes('-ai') && !query.includes('ai')) {
       // Add -ai to the query
       urlParams.set('q', query + ' -ai');
       
